@@ -33,7 +33,7 @@ const OfferCard = ({ data }) => {
       <div className="flex-shrink-0">
         <Image
           src={data.image || "/headphone.jpeg"} // Default image if none provided
-          alt={data.productName || "Productunnamed"} // Default alt text
+          alt={data.productName || "Product_unnamed"} // Default alt text
           width={300}
           height={300}
           className="object-contain"
