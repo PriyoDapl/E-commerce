@@ -8,18 +8,24 @@ const OfferCard = ({ data }) => {
       {/* Left side - Text content */}
       <div className="flex-1 pr-6">
         <p className="text-sm text-gray-600 mb-2">
-          {data.offerText || "Special Offer - Limited Time Only!"}
+          {data.offerText}
         </p>
         <h3 className="text-xl font-bold text-gray-800 mb-4">
-          {data.advertisingTag || "Premium Headphones 50% OFF"}
+          {data.advertisingTag}
         </h3>
         <div className="flex gap-3">
-          <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 cursor-pointer transition">
-            Shop Now
-          </button>
-          <button className="border border-black text-black px-6 py-2 rounded-md hover:bg-gray-800 hover:text-white cursor-pointer transition">
-            Learn More
-          </button>
+          <a 
+            href={data.shopLink || "#"}
+            className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 cursor-pointer transition inline-block text-center"
+          >
+            Shop
+          </a>
+          <a 
+            href={data.learnMoreLink || "#"}
+            className="border border-black text-black px-6 py-2 rounded-md hover:bg-gray-800 hover:text-white cursor-pointer transition inline-block text-center"
+          >
+            View Similar
+          </a>
         </div>
       </div>
 
@@ -27,7 +33,7 @@ const OfferCard = ({ data }) => {
       <div className="flex-shrink-0">
         <Image
           src={data.image || "/headphone.jpeg"} // Default image if none provided
-          alt={data.productName || "Product"} // Default alt text
+          alt={data.productName || "Productunnamed"} // Default alt text
           width={300}
           height={300}
           className="object-contain"

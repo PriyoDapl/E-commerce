@@ -14,36 +14,48 @@ const OfferSection = () => {
     {
       offerText: "Limited Time Deal - 50% offer!",
       advertisingTag: "Experience the Sound of Luxury at the price of a budget!",
+      shopLink: "/",
+      learnMoreLink: "/",
       image: "/headphone.png",
       productName: "Premium Wireless Headphones"
     },
     {
       offerText: "Flash Sale - Today Only!",
       advertisingTag: "Gaming Headset 45% OFF",
+      shopLink: "/",
+      learnMoreLink: "/",
       image: "/headphone.png",
       productName: "Gaming Headset Pro"
     },
     {
       offerText: "Best Seller - Customer Favorite!",
       advertisingTag: "Noise Cancel Headphones 30% OFF",
+      shopLink: "/",
+      learnMoreLink: "/",
       image: "/headphone.png",
       productName: "Noise Cancelling Headphones"
     },
     {
-        offerText: "New Arrival - Be the First!",
-        advertisingTag: "Smart Headphones with AI Assistant",
-        image: "",
-        productName: "Smart Headphones"
+      offerText: "New Arrival - Be the First!",
+      advertisingTag: "Smart Headphones with AI Assistant",
+      shopLink: "/",
+      learnMoreLink: "/",
+      image: "",
+      productName: "Smart Headphones"
     },
     {
       offerText: "Bundle Offer - Save More!",
       advertisingTag: "Headphones + Accessories 40% OFF",
+      shopLink: "/",
+      learnMoreLink: "/",
       image: "",
       productName: "Headphones Bundle"
     },
     {
       offerText: "Exclusive Offer - Members Only!",
       advertisingTag: "Wireless Earbuds 35% OFF",
+      shopLink: "/",
+      learnMoreLink: "/",
       image: "",
       productName: "Wireless Earbuds"
     }

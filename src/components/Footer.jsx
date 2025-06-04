@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="flex flex-col md:flex-row items-start justify-center px-6 md:px-16 lg:px-32 gap-10 py-14 border-b border-gray-500/30 text-white">
         <div className="w-4/5">
+        <Link className="flex items-center gap-2" href="/">
           <Image
             className="w-28 md:w-32"
             src="/logo.svg"
@@ -14,6 +16,7 @@ const Footer = () => {
             height={32}
             alt="logo"
           />
+          </Link>
           <p className="mt-6 text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             atque excepturi accusamus incidunt quos? Ea corrupti ut officia
